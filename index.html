@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resume</title>
+    <link rel="stylesheet" href="./css/icon.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .a1:hover {
+            color: rgb(146, 146, 146);
+        }
+
+        .a2:hover {
+            color: red;
+        }
+
+        .a3:hover {
+            color: rgb(0, 243, 61);
+        }
+
+        .a4:hover {
+            color: rgb(0, 181, 253);
+        }
+
+        body {
+            width: 100%;
+            height: 950px;
+            background: rgb(248, 248, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .username>div {
+            padding: 5px 0;
+        }
+
+        .username div:nth-child(1) {
+            font-size: 50px;
+            text-shadow: 10px 5px 3px rgb(143, 253, 244);
+
+        }
+
+        .username div:nth-child(2) {
+            font-size: 25px;
+            color: #666;
+        }
+
+        .username div:nth-child(4) {
+            font-size: 25px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .container-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgb(134, 134, 134);
+        }
+
+        .usernamemsg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .usernameimg {
+            height: 50px;
+            width: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+
+        }
+
+        .usernameimg img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .name {
+            padding: 10px 10px 10px 30px;
+            color: #666;
+        }
+
+
+        .msg {
+            overflow: hidden;
+            width:80px;
+            height: 23px;
+            transition: all 1s ease;      
+        }
+        .msg:hover{
+            width:400px;
+        }
+        .span{
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <div class="container">
+            <div class="container-wrap">
+                <div class="username">
+                    <div>hello,Welcome to my personal website!</div>
+                    <div>你好，欢迎我的个人网站</div>
+                    <div class="usernamemsg">
+                        <div class="usernameimg">
+                            <img src="./img/timg.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            波罗斯
+                        </div>
+                    </div>
+
+                </div>
+                <div class="msg">
+                  
+                    <div class="tel-msg">
+                        <span class="span">练习方式</span>
+                        <a class="a1"><span>git</span>&nbsp;&nbsp;<span class="iconfont">&#xe799;</span></a>
+                        <a class="a2"><span>新浪</span>&nbsp;&nbsp;<span class="iconfont">&#xe644;</span></a>
+                        <a class="a3"><span>微信</span>&nbsp;&nbsp;<span class="iconfont">&#xe679;</span></a>
+                        <a class="a4"><span>QQ</span>&nbsp;&nbsp;<span class="iconfont">&#xe65c;</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setInterval(function(){
+            let color='rgba('+Math.floor(255*Math.random())+','+Math.floor(255*Math.random())+','+Math.floor(255*Math.random())+',0.5)';
+           
+             document.getElementsByTagName("body")[0].style.backgroundColor=color;
+        },2000)
+       
+    
+    </script>
+
+</body>
+
+</html>
